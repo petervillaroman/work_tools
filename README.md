@@ -24,16 +24,16 @@ This tool helps you manage separate work and personal profiles on your Mac by sa
 1. Make the scripts executable:
 
 ```bash
-chmod +x start_work.py stop_work.py sandbox.py
+chmod +x go_work.py go_play.py go_sandbox.py
 ```
 
 2. Add aliases to your shell configuration file (~/.zshrc):
 
 ```bash
 # Work/Personal profile switching aliases
-alias start_work="python3 /path/to/start_work.py"
-alias stop_work="python3 /path/to/stop_work.py"
-alias sandbox="python3 /path/to/sandbox.py"
+alias go_work="python3 /path/to/go_work.py"
+alias go_play="python3 /path/to/go_play.py"
+alias go_sandbox="python3 /path/to/go_sandbox.py"
 ```
 
 3. Load the new aliases (or restart your terminal):
@@ -47,19 +47,19 @@ source ~/.zshrc
 ### Switch to Work Profile
 
 ```bash
-start_work
+go_work
 ```
 
 ### Switch to Personal Profile
 
 ```bash
-stop_work
+go_play
 ```
 
 ### Start a Sandbox Session
 
 ```bash
-sandbox
+go_sandbox
 ```
 
 The sandbox mode provides a fresh session without saving its state. When you switch to sandbox mode:
